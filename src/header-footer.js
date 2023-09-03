@@ -1,4 +1,9 @@
-import { homePage } from "./home"
+
+import  {homePage}  from "./home"
+import  {menu}  from "./menu"
+import  {contactUs}  from "./contact"
+import  {booking}  from "./reservation"
+
 
 const pageHead= () =>{
     const content = document.querySelector('#content')
@@ -27,21 +32,21 @@ const pageHead= () =>{
     const navItem2 = document.createElement('li')
     const menuBtn = document.createElement('a')
     menuBtn.href = '#menu'
-    menuBtn.classList.add = 'menu'
+    menuBtn.classList.add = 'home'
     menuBtn.textContent = 'Menu'
     navItem2.appendChild(menuBtn)
 
     const navItem3 = document.createElement('li')
     const contactBtn = document.createElement('a')
     contactBtn.href = '#contact'
-    contactBtn.classList.add = 'contact'
+    contactBtn.classList.add = 'home'
     contactBtn.textContent = 'Contact Us'
     navItem3.appendChild(contactBtn)
 
     const navItem4 = document.createElement('li')
     const bookingBtn = document.createElement('a')
     bookingBtn.href = '#booking'
-    bookingBtn.classList.add = 'booking'
+    bookingBtn.classList.add = 'home'
     bookingBtn.textContent = 'Booking'
     navItem4.appendChild(bookingBtn)
 
@@ -56,39 +61,53 @@ const pageHead= () =>{
 
     header.appendChild(navBar)
 
-    page.appendChild(header)
-    content.appendChild(page)
+    content.appendChild(header)
 
-    homeBtn.addEventListener('click', function() {
-        clearPage()
-        pageHead()
-        homePage()
-        foot()   
-    })
-    
-}
+
 
 //setting up footer
-const foot = () => {    
-    const content = document.querySelector('#content')
-    const page = document.createElement('div')
-    page.classList.add('page')
+    const footer = document.createElement('footer')
+    const footPara = document.createElement('p')
+    footPara.textContent = ' © 2023 Bigg Bites Restaurant. All rights reserved.'
 
-const footer = document.createElement('footer')
-const footPara = document.createElement('p')
-footPara.textContent = ' © 2023 Bigg Bites Restaurant. All rights reserved.'
+    footer.appendChild(footPara)
 
-footer.appendChild(footPara)
+    content.appendChild(footer)
 
 
-page.appendChild(footer)
+//add eventlisteners
+        
+    homeBtn.addEventListener('click', function() {
+        resetPage()
+        homePage()  
+    })
 
-content.appendChild(page)
+    menuBtn.addEventListener('click', function() {
+        resetPage()
+        menu()  
+    })
+
+    contactBtn.addEventListener('click', function() {
+        resetPage()
+        contactUs()  
+    })
+
+    bookingBtn.addEventListener('click', function() {
+        resetPage()
+        booking()  
+    })
+
+
+    function resetPage(){
+        const content = document.querySelector('#content')
+        const page = document.querySelector('.page')
+        if(page){
+        content.removeChild(page)
+        }
+    }   
+
 
 }
 
-
-
-
-export {pageHead, foot}
+export {pageHead}
 

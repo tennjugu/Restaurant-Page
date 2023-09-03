@@ -2,7 +2,7 @@ const menu = () => {
     const content = document.querySelector('#content')
     const page = document.createElement('div')
     page.classList.add('page')
-
+1
     const menuHead = document.createElement('h1')
     menuHead.classList.add('menu-head')
     menuHead.textContent = 'Bigg Bites Menu'
@@ -169,4 +169,4 @@ const menu = () => {
 
 }
 
-export {menu}
+export  {menu}

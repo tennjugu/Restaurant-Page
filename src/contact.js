@@ -6,11 +6,13 @@ const contactUs = () => {
 
     const contactHead = document.createElement('h1')
     contactHead.textContent = 'Contact Us'
+    contactHead.classList.add('contactHead')
 
 
     // description paragraph
     const description = document.createElement('h4')
     description.textContent = 'Have questions or feedback? Reach out to us!'
+    description.classList.add('note')
 
     // form element
     const form = document.createElement('form')
@@ -48,9 +50,10 @@ const contactUs = () => {
     messageTextarea.required = true
 
     // Submit button
-    const submitButton = document.createElement('input')
+    const submitButton = document.createElement('button')
     submitButton.type = 'submit'
     submitButton.value = 'Submit'
+    submitButton.classList.add = 'Submit'
 
 
 
