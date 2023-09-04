@@ -11,9 +11,17 @@ const contactUs = () => {
 
     // description paragraph
     const description = document.createElement('h4')
-    description.textContent = 'Have questions or feedback? Reach out to us!'
+    description.textContent = `If you have any questions, special requests, or if you simply want to get in touch,
+    call us at (234) 456-7890 during our business hours. Our friendly staff is ready to assist you with any inquiries
+     you may have. Feel free to send us an email at info@BiggBitesrestaurant.com. We'll respond promptly to your messages.
+      Alternatively, you can use the contact form below to send us a message. Just fill out the required fields, hit "Submit,"
+      and your request will be duly noted. We value your feedback and look forward to hearing from you! `
     description.classList.add('note')
 
+    const contactbottom = document.createElement('h4')
+    contactbottom.textContent = `Thank you for considering Bigg Bites Restaurant as your dining destination. Your satisfaction is
+    our top priority, and we're here to assist you in any way we can.`
+    contactbottom.classList.add('note')
     // form element
     const form = document.createElement('form')
     form.action = '#'
@@ -53,7 +61,7 @@ const contactUs = () => {
     const submitButton = document.createElement('button')
     submitButton.type = 'submit'
     submitButton.value = 'Submit'
-    submitButton.classList.add = 'Submit'
+    submitButton.textContent= 'Submit'
 
 
 
@@ -67,6 +75,7 @@ const contactUs = () => {
     page.appendChild(contactHead)
     page.appendChild(description)
     page.appendChild(form)
+    page.appendChild(contactbottom)
 
     content.appendChild(page)
 }
