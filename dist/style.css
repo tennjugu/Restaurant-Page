@@ -11,16 +11,16 @@
 }
 
 #content{
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
-    /* background-color: rgb(20, 17, 17); */
     background-color: white;
+    overflow: auto;
 }
 
 h1{
     font-family: 'Lobster Two', cursive;
     font-size: 3em;
-    padding-top: .7em;
+    padding-top: 10px;
 }
 
 h1, h3{
@@ -28,16 +28,17 @@ h1, h3{
     padding-right: 20px;
 }
 
-.grid{
-    display: flex;
-    flex-direction: column;
-}
+/* .grid{
+    display: grid;
+    width: 100%;
+   grid-template-columns: 40% 50%;
+} */
 nav{
     display: flex;
     align-items: center;
     position:static;
-    padding: 1px;
-    padding-right: 20px;
+    padding: 3px;
+    padding-right: 70px;
     justify-content: space-between;
     background-color: black;
   
@@ -66,13 +67,22 @@ ul a:hover{
 }
 
 img{
-    padding: 1.4em;
-    width: 30%;
+    padding: 10px;
+    width: 35%;
 }
 
 img:hover{
     cursor: pointer;
 }
+
+/* .captionDiv{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
 
 footer{
     position: fixed;
@@ -107,11 +117,55 @@ form{
     color: black;
     border: 1px solid rgb(49, 47, 47);
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
     width: 35%;
 }
 
 input{
    border: 1px solid black;
    border-radius: 2px;
+   height: 30px;
+}
+
+button{
+    margin-top: 20px;
+    width: 120px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+.menu-section{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 70px;
+    padding: 20px;
+}
+
+.menuDiv ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.menuContainer{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.menuContainer h2{
+    margin-bottom: 3px;
+    font-size: 2em;
+}
+
+.note{
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
 }
