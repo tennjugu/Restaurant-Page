@@ -6,6 +6,14 @@ const booking = () =>{
     const bookheading = document.createElement("h1")
     bookheading.textContent = "Make a Reservation"
 
+    const bookPara = document.createElement("h3")
+    bookPara.textContent = `Ready to experience the exquisite flavors of Bigg Bites Restaurant? 
+    Booking a table is easy! Simply fill out the reservation form below, and we'll ensure your 
+    dining experience is perfect. For any urgent reservation requests or if you need assistance, 
+    you can also reach us by phone at (234) 456-7890 or send us an email at reservations@BiggBitesrestaurant.com.
+     We're here to make your visit memorable and hassle-free.`
+     bookPara.classList.add('note')
+
     // form element
     const form = document.createElement("form")
     form.action = "#"
@@ -48,9 +56,9 @@ const booking = () =>{
     guestsInput.required = true
 
     // Submit button
-    const submitButton = document.createElement("input")
+    const submitButton = document.createElement("button")
     submitButton.type = "submit"
-    submitButton.value = "Reserve Now"
+    submitButton.textContent = "Reserve Now"
 
 
     form.appendChild(nameLabel)
@@ -64,6 +72,7 @@ const booking = () =>{
     form.appendChild(submitButton)
 
     page.appendChild(bookheading)
+    page.appendChild(bookPara)
     page.appendChild(form)
 
     content.appendChild(page)

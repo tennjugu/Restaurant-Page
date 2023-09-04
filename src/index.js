@@ -1,2 +1,2 @@
-import {load} from "./pageLoad";
+import {load} from "./initializePage";
 load()
