@@ -2,10 +2,10 @@ const menu = () => {
     const content = document.querySelector('#content')
     const page = document.createElement('div')
     page.classList.add('page')
-1
+
     const menuHead = document.createElement('h1')
     menuHead.classList.add('menu-head')
-    menuHead.textContent = 'Bigg Bites Menu'
+    menuHead.textContent = 'Bigg Bittes Menu'
 
     const menuSection = document.createElement('div')
     menuSection.classList.add('menu-section')
@@ -114,7 +114,7 @@ const menu = () => {
     stewsList.appendChild(stews4)
     stewsList.appendChild(stews5)
 
-    stewDiv.appendChild(condimentsList)
+    stewDiv.appendChild(stewsList)
 
     stewContainer.appendChild(stews)
     stewContainer.appendChild(stewDiv)
@@ -144,10 +144,10 @@ const menu = () => {
 
 
      
-    riceList.appendChild(stews1)
-    riceList.appendChild(stews2)
-    riceList.appendChild(stews3)
-    riceList.appendChild(stews4)
+    riceList.appendChild(rice1)
+    riceList.appendChild(rice2)
+    riceList.appendChild(rice3)
+    riceList.appendChild(rice4)
 
     riceDiv.appendChild(riceList)
 
@@ -169,4 +169,4 @@ const menu = () => {
 
 }
 
-export  {menu}
+export {menu}
