@@ -101,7 +101,7 @@ const pageHead= () =>{
     function resetPage(){
         const content = document.querySelector('#content')
         const page = document.querySelector('.page')
-        if(page){
+        if(content.contains(page)){
         content.removeChild(page)
         }
     }   
