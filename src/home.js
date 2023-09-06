@@ -6,15 +6,12 @@ const homePage = () =>{
     const heading = document.createElement('h1')
     heading.textContent = 'Welcome to Bigg Bites Restaurant!'
 
-
     const grid = document.createElement('div')
     grid.classList.add  ('grid')
-
 
     const RestImage = document.createElement('img')
     RestImage.src = '../src/jason-leung-poI7DelFiVA-unsplash.jpg'
     RestImage.alt = 'restaurant image'
-
 
     const captionDiv = document.createElement('div')
     captionDiv.classList.add ('captionDiv')

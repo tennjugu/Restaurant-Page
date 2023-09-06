@@ -50,7 +50,6 @@ const pageHead= () =>{
     bookingBtn.textContent = 'Booking'
     navItem4.appendChild(bookingBtn)
 
-
     navItems.appendChild(navItem1)
     navItems.appendChild(navItem2)
     navItems.appendChild(navItem3)
@@ -64,7 +63,6 @@ const pageHead= () =>{
     content.appendChild(header)
 
 
-
 //setting up footer
     const footer = document.createElement('footer')
     const footPara = document.createElement('p')
@@ -76,7 +74,6 @@ const pageHead= () =>{
 
 
 //add eventlisteners
-        
     homeBtn.addEventListener('click', function() {
         resetPage()
         homePage()  

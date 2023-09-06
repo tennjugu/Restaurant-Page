@@ -31,10 +31,6 @@ const menu = () => {
     const soup4 = document.createElement('li')
     soup4.textContent = 'Vegetable--------#500'
 
-
-
-
-    
     soupList.appendChild(soup1)
     soupList.appendChild(soup2)
     soupList.appendChild(soup3)
@@ -44,8 +40,6 @@ const menu = () => {
 
     soupContainer.appendChild(soups)
     soupContainer.appendChild(soupDiv)
-
-
 
     //condiments section
     const condimentContainer = document.createElement('div')
@@ -80,7 +74,6 @@ const menu = () => {
     condimentContainer.appendChild(condimentDiv)
 
 
-    
     //Stews section
     const stewContainer = document.createElement('div')
     stewContainer.classList.add('menuContainer')
@@ -105,9 +98,6 @@ const menu = () => {
     const stews5 = document.createElement('li')
     stews5.textContent = 'Goat----------#1000'
 
-
-
-    
     stewsList.appendChild(stews1)
     stewsList.appendChild(stews2)
     stewsList.appendChild(stews3)
@@ -118,7 +108,6 @@ const menu = () => {
 
     stewContainer.appendChild(stews)
     stewContainer.appendChild(stewDiv)
-
 
 
     //Rice section
@@ -142,8 +131,6 @@ const menu = () => {
     const rice4 = document.createElement('li')
     rice4.textContent = 'Coconut--------#800'
 
-
-     
     riceList.appendChild(rice1)
     riceList.appendChild(rice2)
     riceList.appendChild(rice3)
@@ -154,15 +141,11 @@ const menu = () => {
     riceContainer.appendChild(rice)
     riceContainer.appendChild(riceDiv)
 
-
-
-
     menuSection.appendChild(soupContainer)
     menuSection.appendChild(condimentContainer)
     menuSection.appendChild(stewContainer)
     menuSection.appendChild(riceContainer)
     
-
     page.appendChild(menuHead)
     page.appendChild(menuSection)
     content.appendChild(page)
