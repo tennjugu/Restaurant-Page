@@ -5,7 +5,7 @@ const menu = () => {
 
     const menuHead = document.createElement('h1')
     menuHead.classList.add('menu-head')
-    menuHead.textContent = 'Bigg Bittes Menu'
+    menuHead.textContent = 'Bigg Bites Menu'
 
     const menuSection = document.createElement('div')
     menuSection.classList.add('menu-section')

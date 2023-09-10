@@ -61,7 +61,7 @@ To run this project locally and explore its features, follow these steps:
 
 1. Clone this repository to your local machine.
 2. Navigate to the project folder using your command line or terminal.
-3. Install the necessary dependencies using a package manager (e.g., npm or yarn).
+3. Install the necessary dependencies using a package manager (e.g., npm).
 4. Use webpack to build the project: `npm run build`.
 5. Open the generated HTML file in your web browser.
 
