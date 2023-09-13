@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto:wght@1,300&display=swap');
+
+*{
+    font-family: 'Lobster Two', Roboto, sans-serif, cursive, ;
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-size: 1em;
+}
+
+#content{
+    height: 120vh;
+    width: 100vw;
+    background-color: white;
+    overflow: auto;
+}
+
+h1{
+    font-family: 'Lobster Two, Roboto, sans-serif';
+    font-size: 3em;
+    padding-top: 10px;
+}
+
+h1, h3{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    position:static;
+    padding: 3px;
+    padding-right: 70px;
+    justify-content: space-between;
+    background-color: black;
+  
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav img{
+    width: 100px;
+}
+
+.home{
+    color: white;
+}
+ul{
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    gap: 2em;
+}
+
+ul a:hover{
+    font-size: 1.2em;
+}
+
+img{
+    padding: 10px;
+    width: 35%;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 10%;
+    background-color: black;   
+}
+
+footer p{
+    color: white;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    border: 1px solid rgb(49, 47, 47);
+    border-radius: 5px;
+    padding: 10px;
+    width: 35%;
+}
+
+input{
+   border: 1px solid black;
+   border-radius: 2px;
+   height: 30px;
+}
+
+button{
+    margin-top: 20px;
+    width: 120px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+.menu-section{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 70px;
+    padding: 20px;
+}
+
+.menuDiv ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.menuContainer{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.menuContainer h2{
+    margin-bottom: 3px;
+    font-size: 2em;
+}
+
+.note{
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+}
