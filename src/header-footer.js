@@ -22,33 +22,46 @@ const pageHead= () =>{
     logo.alt = 'Bigg Bites logo'
 
     const navItems = document.createElement('ul')
+    navItems.classList.add('navItems')
     const navItem1 = document.createElement('li')
     const homeBtn = document.createElement('a')
     homeBtn.href = '#home'
-    homeBtn.classList.add = 'home'
+    homeBtn.classList.add('nav-menu')
     homeBtn.textContent = 'Home'
     navItem1.appendChild(homeBtn)
 
     const navItem2 = document.createElement('li')
     const menuBtn = document.createElement('a')
     menuBtn.href = '#menu'
-    menuBtn.classList.add = 'home'
+    menuBtn.classList.add('nav-menu')
     menuBtn.textContent = 'Menu'
     navItem2.appendChild(menuBtn)
 
     const navItem3 = document.createElement('li')
     const contactBtn = document.createElement('a')
     contactBtn.href = '#contact'
-    contactBtn.classList.add = 'home'
+    contactBtn.classList.add('nav-menu')
     contactBtn.textContent = 'Contact Us'
     navItem3.appendChild(contactBtn)
 
     const navItem4 = document.createElement('li')
     const bookingBtn = document.createElement('a')
     bookingBtn.href = '#booking'
-    bookingBtn.classList.add = 'home'
+    bookingBtn.classList.add('nav-menu')
     bookingBtn.textContent = 'Booking'
     navItem4.appendChild(bookingBtn)
+
+    const hamburger = document.createElement('div')
+    hamburger.classList.add('hamburger')
+
+    const bars = ['barOne', 'barTwo', 'barThree']
+    for(let i = 0; i < bars.length; i++){
+        const bar = document.createElement('span')
+        // bar.textContent = 'hello'
+        bar.classList.add('bar')
+        hamburger.appendChild(bar)
+    }
+
 
     navItems.appendChild(navItem1)
     navItems.appendChild(navItem2)
@@ -57,6 +70,7 @@ const pageHead= () =>{
 
     navBar.appendChild(logo)
     navBar.appendChild(navItems)
+    navBar.appendChild(hamburger)
 
     header.appendChild(navBar)
 
