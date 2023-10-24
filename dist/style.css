@@ -33,7 +33,7 @@ nav{
     align-items: center;
     position:static;
     padding: 3px;
-    padding-right: 70px;
+    padding-right: 10px;
     justify-content: space-between;
     background-color: black;
   
@@ -186,22 +186,27 @@ button:hover{
     }
 
     .navItems{
-        position: fixed;
+        position:absolute;
         left: -100%;
         top: 70px;
         gap: 0;
         flex-direction: column;
         background-color: black;
+        color: white;
         width: 100%;
         text-align: center;
         transition: 0.3s;
     }
 
-    ul{
+    .nav-item{
         margin: 16px 0;
     }
 
     .navItems.active{
         left: 0;
+    }
+
+    .page.active{
+        padding-top: 200px;
     }
 }

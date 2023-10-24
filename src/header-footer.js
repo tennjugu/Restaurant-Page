@@ -24,6 +24,7 @@ const pageHead= () =>{
     const navItems = document.createElement('ul')
     navItems.classList.add('navItems')
     const navItem1 = document.createElement('li')
+    navItem1.classList.add('nav-item')
     const homeBtn = document.createElement('a')
     homeBtn.href = '#home'
     homeBtn.classList.add('nav-menu')
@@ -31,6 +32,7 @@ const pageHead= () =>{
     navItem1.appendChild(homeBtn)
 
     const navItem2 = document.createElement('li')
+    navItem2.classList.add('nav-item')
     const menuBtn = document.createElement('a')
     menuBtn.href = '#menu'
     menuBtn.classList.add('nav-menu')
@@ -38,6 +40,7 @@ const pageHead= () =>{
     navItem2.appendChild(menuBtn)
 
     const navItem3 = document.createElement('li')
+    navItem3.classList.add('nav-item')
     const contactBtn = document.createElement('a')
     contactBtn.href = '#contact'
     contactBtn.classList.add('nav-menu')
@@ -45,6 +48,7 @@ const pageHead= () =>{
     navItem3.appendChild(contactBtn)
 
     const navItem4 = document.createElement('li')
+    navItem4.classList.add('nav-item')
     const bookingBtn = document.createElement('a')
     bookingBtn.href = '#booking'
     bookingBtn.classList.add('nav-menu')
