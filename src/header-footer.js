@@ -59,7 +59,6 @@ const pageHead= () =>{
         bar.classList.add('bar')
         hamburger.appendChild(bar)
     }
-
     navItems.appendChild(navItem1)
     navItems.appendChild(navItem2)
     navItems.appendChild(navItem3)
