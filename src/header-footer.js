@@ -4,7 +4,6 @@ import  {menu}  from "./menu"
 import  {contactUs}  from "./contact"
 import  {booking}  from "./reservation"
 
-
 const pageHead= () =>{
     const content = document.querySelector('#content')
     const page = document.createElement('div')
@@ -15,7 +14,6 @@ const pageHead= () =>{
     header.classList.add('header')
 
     const navBar = document.createElement('nav')
-
     const logo = document.createElement('img')
     logo.src = '../src/logo.png'
     logo.alt = 'Bigg Bites logo'
@@ -68,13 +66,10 @@ const pageHead= () =>{
     navItems.appendChild(navItem2)
     navItems.appendChild(navItem3)
     navItems.appendChild(navItem4)
-
     navBar.appendChild(logo)
     navBar.appendChild(navItems)
     navBar.appendChild(hamburger)
-
     header.appendChild(navBar)
-
     content.appendChild(header)
 
 //setting up footer

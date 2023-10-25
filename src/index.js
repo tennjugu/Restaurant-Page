@@ -11,7 +11,6 @@ hamburger.addEventListener("click", () =>{
     pageContent.classList.toggle("active")
 })
 
-
 navLinks.forEach((menu) => 
     menu.addEventListener("click", closeMenu
 ))
