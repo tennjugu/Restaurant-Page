@@ -1,4 +1,3 @@
-
 import  {homePage}  from "./home"
 import  {menu}  from "./menu"
 import  {contactUs}  from "./contact"
@@ -54,7 +53,6 @@ const pageHead= () =>{
 
     const hamburger = document.createElement('div')
     hamburger.classList.add('hamburger')
-
     const bars = ['barOne', 'barTwo', 'barThree']
     for(let i = 0; i < bars.length; i++){
         const bar = document.createElement('span')
@@ -76,7 +74,6 @@ const pageHead= () =>{
     const footer = document.createElement('footer')
     const footPara = document.createElement('p')
     footPara.textContent = ' © 2023 Bigg Bites Restaurant. All rights reserved.'
-
     footer.appendChild(footPara)
     content.appendChild(footer)
 
@@ -85,22 +82,18 @@ const pageHead= () =>{
         resetPage()
         homePage()  
     })
-
     menuBtn.addEventListener('click', function() {
         resetPage()
         menu()  
     })
-
     contactBtn.addEventListener('click', function() {
         resetPage()
         contactUs()  
     })
-
     bookingBtn.addEventListener('click', function() {
         resetPage()
         booking()  
     })
-
     function resetPage(){
         const content = document.querySelector('#content')
         const page = document.querySelector('.page')
