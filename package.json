@@ -4,24 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production"
+ "start": "webpack-dev-server --mode development --open",
+ "build": "webpack --mode production"
   },
-
   "keywords": [],
   "author": "Jugu Tenerat",
   "license": "ISC",
   "repository": {
-    "type": "git",
-    "url": "https://github.com/tennjugu/Restaurant-Page.git"
+ "type": "git",
+ "url": "https://github.com/tennjugu/Restaurant-Page.git"
   },
   "bugs": {
-    "url": "https://github.com/tennjugu/Restaurant-Page/issues"
+ "url": "https://github.com/tennjugu/Restaurant-Page/issues"
   },
   "homepage": "https://github.com/tennjugu/Restaurant-Page#readme",
   "devDependencies": {
-    "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+ "webpack": "^5.88.2",
+ "webpack-cli": "^5.1.4",
+ "webpack-dev-server": "^4.15.1"
   }
-}
+  }

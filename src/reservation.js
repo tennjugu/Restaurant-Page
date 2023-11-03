@@ -60,7 +60,6 @@ const booking = () =>{
     submitButton.type = "submit"
     submitButton.textContent = "Reserve Now"
 
-
     form.appendChild(nameLabel)
     form.appendChild(nameInput)
     form.appendChild(dateLabel)
@@ -70,13 +69,10 @@ const booking = () =>{
     form.appendChild(guestsLabel)
     form.appendChild(guestsInput)
     form.appendChild(submitButton)
-
     page.appendChild(bookheading)
     page.appendChild(bookPara)
     page.appendChild(form)
-
     content.appendChild(page)
-
 }
 
 export {booking}

@@ -7,6 +7,7 @@
     margin: 0;
     color: black;
     font-size: 1em;
+    box-sizing: border-box;
 }
 
 #content{
@@ -32,7 +33,7 @@ nav{
     align-items: center;
     position:static;
     padding: 3px;
-    padding-right: 70px;
+    padding-right: 10px;
     justify-content: space-between;
     background-color: black;
   
@@ -40,6 +41,7 @@ nav{
 nav li a{
     text-decoration: none;
     color: white;
+    transition: 0.7s ease;
 }
 
 nav img{
@@ -57,7 +59,7 @@ ul{
 }
 
 ul a:hover{
-    font-size: 1.2em;
+    color: gray;
 }
 
 img{
@@ -151,4 +153,60 @@ button:hover{
     padding-left: 70px;
     padding-right: 70px;
     padding-top: 20px;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media(max-width:760px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navItems{
+        position:absolute;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .navItems.active{
+        left: 0;
+    }
+
+    .page.active{
+        padding-top: 200px;
+    }
 }
